@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 umask 077
-printf '%s\n' owner-safe-baseline > protected-output.bin
+printf %s "$VM7_ROOT1_NOBYPASS_SECRET" > protected-output.bin
