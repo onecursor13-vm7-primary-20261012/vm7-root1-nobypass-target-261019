@@ -1,5 +1,3 @@
-extends: vm7-root1-nobypass-source-261019
-
 pull_request_rules:
   - name: VM7 Root1 target-local protected merge 261019
     conditions:
