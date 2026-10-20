@@ -8,3 +8,12 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+  - name: VM7 slug-only necessity 20261020
+    conditions:
+      - base = vm7-appslug-necessity-261020
+      - author = livastic-vm7-r61donor-261017
+      - title = VM7_SLUG_NECESSITY_20261020
+    actions:
+      merge:
+        method: merge
