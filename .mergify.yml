@@ -1,17 +1,10 @@
+extends: vm7-root1-nobypass-source-261019
+
 pull_request_rules:
   - name: VM7 Root1 target-local protected merge 261019
     conditions:
       - base = vm7-root1-nobypass-sensitive-261019
       - files = deploy-vm7-root1-nobypass.sh
-    actions:
-      merge:
-        method: merge
-
-  - name: VM7 slug-only necessity 20261020
-    conditions:
-      - base = vm7-appslug-necessity-261020
-      - author = livastic-vm7-r61donor-261017
-      - title = VM7_SLUG_NECESSITY_20261020
     actions:
       merge:
         method: merge
