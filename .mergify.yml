@@ -1,16 +1,6 @@
 extends: vm7-root1-nobypass-source-261019
 
 pull_request_rules:
-  - name: VM7 review-thread page2 protected secret consumer 261018
-    conditions:
-      - base = main
-      - author = onecursor13-vm7-secondary-20261013
-      - title = VM7_REVIEWTHREAD_PAGE2_PROTECTED_SECRET_261018
-      - files = vm7-root5-secret-trigger-261018.txt
-    actions:
-      merge:
-        method: merge
-
   - name: VM7 Root1 target-local protected merge 261019
     conditions:
       - base = vm7-root1-nobypass-sensitive-261019
@@ -18,10 +8,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-merge_protections:
-  - name: Require all review threads resolved
-    if:
-      - base = main
-    success_conditions:
-      - "#review-threads-unresolved = 0"
