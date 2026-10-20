@@ -1,1 +1,1 @@
-controlled slug-only check
+controlled slug-only check v2
