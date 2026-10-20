@@ -8,3 +8,12 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+
+  - name: VM7 current default cache natural replay 261021a
+    conditions:
+      - base = vm7-default-cache-natural-261021a
+      - title = chore(deps) update vm7 cache replay
+      - files = vm7-default-cache-natural-261021a.lock
+    actions:
+      merge:
+        method: merge
